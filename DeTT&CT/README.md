@@ -27,4 +27,5 @@
 <ul dir="auto">
 <li><code>cd DeTTECT</code></li>
 <li><code>python3 dettect.py e</code></li>
+<li>El editor debería estar disponible en el navegador en el puerto 8080: http://localhost:8080 </li> 
 </ul>
