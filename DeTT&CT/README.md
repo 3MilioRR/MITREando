@@ -1,6 +1,6 @@
 <h1 dir="auto">DeTT&CT</h1>
 
-<p dir="auto">DeTT&CT es una herramineta desarrollada en Python.</p>
+<p dir="auto">DeTT&CT es una herramienta desarrollada en Python.</p>
 <p dir="auto">El framework completo consiste en la propia herramienta, un cliente para la administración de los ficheros YAML, el editor de  DeTT&CT y un juego de tablas para hacer funcionar el entorno.</p>
  
 <p dir="auto">Existe una imagen Docker para DeTT&CT, y tambien se puede instalar localmente.</p>
