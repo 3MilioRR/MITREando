@@ -5,7 +5,7 @@
  
 <p dir="auto">Existe una imagen Docker para DeTT&CT, y tambien se puede instalar localmente.</p>
 
-<p dir="auto">Toda la información necesaria para su instalación (docker - offline) esta en este enlace:<br>
+<p dir="auto">Toda la información necesaria para su instalación (docker y offline) está en este enlace:<br>
 <a href="https://github.com/rabobank-cdc/DeTTECT/wiki/Installation-and-requirements">https://github.com/rabobank-cdc/DeTTECT/wiki/Installation-and-requirements</a></p>
 
 <strong><h3>Instalación local</strong></h3>
