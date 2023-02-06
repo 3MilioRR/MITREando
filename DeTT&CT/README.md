@@ -13,7 +13,7 @@
 <p dir="auto"><strong>Requisitos:</strong></p>
 <ul dir="auto">
 <li>Python 3.8 o superior</li>
-<li>pip</li>
+<li>pip (gestor de instalación de paquetes de Python)</li>
 <li>Instalar con los paquetes del fichero requirements.txt</li></ul>
 
 <p dir="auto"><strong>Instalación</strong></p>
