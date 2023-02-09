@@ -1,0 +1,46 @@
+
+docker pull ghcr.io/center-for-threat-informed-defense/attack-flow:main
+docker run --name AttackFlowBuilder -p8000:80 ghcr.io/center-for-threat-informed-defense/attack-flow:main
+
+docker start AttackFlowBuilder
+localhost:8000
+   
+//   docker pull lthn/mitre-attack-navigator
+//  docker run --name navigator -p 80:80 lthn/mitre-attack-navigator:latest
+   
+   
+   
+   Attack Flow Library
+   https://center-for-threat-informed-defense.github.io/attack-flow/developers/
+   requisitos: Python 3.8 y Python Poetry
+   
+   instalar poetry
+   https://python-poetry.org/docs/
+   sudo apt install python3-poetry
+   
+curl -sSL https://install.python-poetry.org | python3 -
+export PATH="/home/emilio/.local/bin:$PATH
+   poetry --version
+   
+   
+   instalar Attack Flow Liobrary
+   git clone git@github.com:center-for-threat-informed-defense/attack-flow.git
+   
+   git clone https://github.com/center-for-threat-informed-defense/attack-flow
+   $ cd attack-flow
+   $ poetry install
+   
+   comprobar instalación
+   poetry shell
+   $  af version
+   
+     
+   Validate JSON files
+   Validate one or more Attack Flow JSON files:
+   poetry shell
+   $ af validate corpus/*.json
+   
+   pintar el flujo
+   poetry shell
+   $ af matrix images/tesla.svg corpus/tesla.json flow-tesla.svg
+   
