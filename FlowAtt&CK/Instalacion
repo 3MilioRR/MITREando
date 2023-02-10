@@ -1,7 +1,7 @@
-Instalación de Flow ATT&CK en la máquin a virtual
+Instalación de Flow ATT&CK en la máquina virtual
 
 Requsitos:
-Docker instalado
+Docker instalado (ver instrucciones para instalar Docker)
 
 Instalación
 docker pull ghcr.io/center-for-threat-informed-defense/attack-flow:main
@@ -16,22 +16,22 @@ Python 3.8
 Python Poetry
    
 instalar poetry (https://python-poetry.org/docs/)
-sudo apt install python3-poetry
-export PATH="/home/emilio/.local/bin:$PATH
+$ sudo apt install python3-poetry
+$ export PATH="/home/LOCALUSER/.local/bin:$PATH"
 
-comprobar
-poetry --version
+comprobar que la instalación es correcta
+$ poetry --version
    
-instalar Attack Flow Liobrary
-git clone https://github.com/center-for-threat-informed-defense/attack-flow
+instalar Attack Flow Library
+$ git clone https://github.com/center-for-threat-informed-defense/attack-flow
 $ cd attack-flow
 $ poetry install
    
 comprobar instalación
-poetry shell
-$  af version
+$ poetry shell
+$ af version
    
     
 Para validar uno o más Attack Flow JSON files:
-poetry shell
+$ poetry shell
 $ af validate corpus/*.json
