@@ -24,6 +24,9 @@
 </ol>
 <div>
 <pre>pip install -r requirements.txt</pre></div>
+<clipboard-copy aria-label="Copy" class="ClipboardButton btn js-clipboard-copy m-2 p-0 tooltipped-no-delay" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip3 install -r requirements.txt" tabindex="0" role="button" style="display: inherit;">
+no sé
+</clipboard>
 
 <p dir="auto"><strong>Ejecución</strong></p>
 <ul dir="auto">
