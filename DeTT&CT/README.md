@@ -22,6 +22,8 @@
 <li>Ve al directorio de DeTT&amp;CT: <code>cd DeTTECT</code></li>
 <li>Instala la herramienta con los requisitos: <code>pip install -r requirements.txt</code></li>
 </ol>
+<div>
+<pre>pip install -r requirements.txt</pre></div>
 
 <p dir="auto"><strong>Ejecución</strong></p>
 <ul dir="auto">
