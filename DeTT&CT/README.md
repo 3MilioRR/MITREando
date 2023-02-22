@@ -8,7 +8,7 @@
 <p dir="auto">Toda la información necesaria para su instalación (docker y offline) está en este enlace:<br>
 <a href="https://github.com/rabobank-cdc/DeTTECT/wiki/Installation-and-requirements">https://github.com/rabobank-cdc/DeTTECT/wiki/Installation-and-requirements</a></p>
 
-<strong><h3>Instalación local</strong></h3>
+<h3 dir="auto">Instalación local</h3>
 <p dir="auto">Si solo quieres hacer una instalación local, puedes seguir estos pasos:</p>
 <p dir="auto"><strong>Requisitos:</strong></p>
 <ul dir="auto">
