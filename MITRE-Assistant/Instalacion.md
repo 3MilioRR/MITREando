@@ -13,7 +13,7 @@
 
 <p><strong>Paso 1: Instalar la aplicación</strong><br>
 <code>cargo install mitre-assistant</code></p>
-<p><strong>Paso 2: Descargar el data set de Mitre ATT&CK/strong><br>
+<p><strong>Paso 2: Descargar el data set de Mitre ATT&CK</strong><br>
 <code>mitre-assistant download -m enterprise</code></p>
 <p><strong>Paso 3: Parsear los datos para su tratamiento</strong><br>
 <code>mitre-assistant baseline -m enterprise</code></p>
@@ -21,7 +21,7 @@
 <code>mitre-assistant -h</code></p>
 
 <h3>Más información:</h3>
-<ul>
+<div><ul>
 <li>https://openbase.com/rust/mitre-assistant/documentation</li>
 <li>https://docs-ma.vercel.app/docs/project/Brief_Overview</li>
-<li>https://www.rust-lang.org/tools/install</li></ul>
+<li>https://www.rust-lang.org/tools/install</li></ul></div>
