@@ -11,6 +11,7 @@
 <code>curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh</code></p>
 
 <h3>Instalar MITRE Assistant</h3>
+
 # Paso 1:
 <code>cargo install mitre-assistant</code>
 # Step 2:
@@ -20,7 +21,7 @@
 # Comprobamos que funciona:
 <code>mitre-assistant -h</code>
 
-Más información:
-https://openbase.com/rust/mitre-assistant/documentation
-https://docs-ma.vercel.app/docs/project/Brief_Overview
+Más información:<br>
+https://openbase.com/rust/mitre-assistant/documentation<br>
+https://docs-ma.vercel.app/docs/project/Brief_Overview<br>
 https://www.rust-lang.org/tools/install
