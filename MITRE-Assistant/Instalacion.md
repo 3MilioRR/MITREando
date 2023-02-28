@@ -1,9 +1,11 @@
-Antes de instalar el paquete, actualiza tu sistema operativo
-sudo apt update && sudo apt upgrade -y
+<H1>Instalación de Mitre Assitant</H1>
 
-PRE-REQUISITOS
-- Instalar build-essential
-sudo apt install build-essential 
+<p>Antes de instalar el paquete, actualiza tu sistema operativo<br>
+<code>sudo apt update && sudo apt upgrade -y</code></p>
+
+<h3># PRE-REQUISITOS</h3>
+<p>- Instalar build-essential
+sudo apt install build-essential</p>
 
 - Instalar RUST
 https://www.rust-lang.org/tools/install
