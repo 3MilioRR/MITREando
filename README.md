@@ -5,8 +5,8 @@ Herramientas y utilidades para sacarle todo el partido al framework de MITRE.
 <ul>
 <li>ATT&CK Navigator [D]</li>
 <li>DeTT&CK</li>
-<li>Flow ATT&CK</li>
-<li>Caldera [D]</li>
+<li>Flow ATT&CK [D]</li>
+<li>Caldera</li>
 <li>Chrome Plugin</li>
 <li>Mitre Assistant</li>
 </ul></div>
