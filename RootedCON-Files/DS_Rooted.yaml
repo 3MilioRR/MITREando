@@ -1,0 +1,224 @@
+version: 1.1
+file_type: data-source-administration
+name: RootedCON Data Source EX
+systems:
+  - applicable_to: W-servers
+    platform:
+      - Windows
+  - applicable_to: Workstations
+    platform:
+      - Windows
+  - applicable_to: L-servers
+    platform:
+      - Linux
+data_sources:
+  - data_source_name: Active Directory Credential Request
+    data_source:
+      - applicable_to:
+          - W-servers
+          - Workstations
+        date_registered: 2023-01-01T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products:
+          - Sysmon
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 3
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 3
+  - data_source_name: Active Directory Object Access
+    data_source:
+      - applicable_to:
+          - W-servers
+          - Workstations
+        date_registered: 2023-01-21T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products:
+          - Sysmon
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 3
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 3
+  - data_source_name: Active Directory Object Modification
+    data_source:
+      - applicable_to:
+          - W-servers
+          - Workstations
+        date_registered: 2022-01-21T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products:
+          - Sysmon
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 3
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 3
+  - data_source_name: Drive Access
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2022-01-21T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products:
+          - Sysmon
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 3
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 3
+  - data_source_name: Drive Creation
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2022-01-21T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products:
+          - Sysmon
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 3
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 3
+  - data_source_name: Drive Modification
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2022-01-21T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products:
+          - Sysmon
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 4
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 5
+  - data_source_name: File Access
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2022-01-21T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products:
+          - Sysmon
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 4
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 5
+  - data_source_name: Logon Session Creation
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2022-01-21T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products:
+          - Sysmon
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 4
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 5
+  - data_source_name: Network Connection Creation
+    data_source:
+      - applicable_to:
+          - W-servers
+          - L-servers
+        date_registered: 2023-01-01T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products:
+          - TCDUMP
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 3
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 2
+  - data_source_name: User Account Authentication
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2022-01-21T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products: []
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 4
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 5
+  - data_source_name: User Account Creation
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2022-01-21T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products: []
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 4
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 5
+  - data_source_name: User Account Deletion
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2022-01-21T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products: []
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 4
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 5
+  - data_source_name: User Account Modification
+    data_source:
+      - applicable_to:
+          - all
+        date_registered: 2022-01-21T00:00:00.000Z
+        date_connected: 2022-01-01T00:00:00.000Z
+        products: []
+        available_for_data_analytics: true
+        comment: ''
+        data_quality:
+          device_completeness: 4
+          data_field_completeness: 1
+          timeliness: 4
+          consistency: 3
+          retention: 5
+domain: enterprise-attack
+notes: 'Este es un ejemplo válido solo como DEMO. No representa ningún caso real '

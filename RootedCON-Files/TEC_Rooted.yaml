@@ -1,0 +1,3355 @@
+version: 1.2
+file_type: technique-administration
+name: RootedCON Data Source EX
+domain: enterprise-attack
+platform:
+- Linux
+- Windows
+techniques:
+- technique_id: T1003
+  technique_name: OS Credential Dumping
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1003.002
+  technique_name: Security Account Manager
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1003.003
+  technique_name: NTDS
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1003.006
+  technique_name: DCSync
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1003.007
+  technique_name: Proc Filesystem
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1003.008
+  technique_name: /etc/passwd and /etc/shadow
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1005
+  technique_name: Data from Local System
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1006
+  technique_name: Direct Volume Access
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1008
+  technique_name: Fallback Channels
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1011
+  technique_name: Exfiltration Over Other Network Medium
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1011.001
+  technique_name: Exfiltration Over Bluetooth
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1014
+  technique_name: Rootkit
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1018
+  technique_name: Remote System Discovery
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+  - applicable_to:
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1020
+  technique_name: Automated Exfiltration
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1021
+  technique_name: Remote Services
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1021.001
+  technique_name: Remote Desktop Protocol
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+  - applicable_to:
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1021.002
+  technique_name: SMB/Windows Admin Shares
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1021.003
+  technique_name: Distributed Component Object Model
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1021.004
+  technique_name: SSH
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1021.005
+  technique_name: VNC
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+  - applicable_to:
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1021.006
+  technique_name: Windows Remote Management
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1025
+  technique_name: Data from Removable Media
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1029
+  technique_name: Scheduled Transfer
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1030
+  technique_name: Data Transfer Size Limits
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1033
+  technique_name: System Owner/User Discovery
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1037
+  technique_name: Boot or Logon Initialization Scripts
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1037.003
+  technique_name: Network Logon Script
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1039
+  technique_name: Data from Network Shared Drive
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1041
+  technique_name: Exfiltration Over C2 Channel
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1047
+  technique_name: Windows Management Instrumentation
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1048
+  technique_name: Exfiltration Over Alternative Protocol
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1048.001
+  technique_name: Exfiltration Over Symmetric Encrypted Non-C2 Protocol
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1048.002
+  technique_name: Exfiltration Over Asymmetric Encrypted Non-C2 Protocol
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1048.003
+  technique_name: Exfiltration Over Unencrypted Non-C2 Protocol
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1052
+  technique_name: Exfiltration Over Physical Medium
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1052.001
+  technique_name: Exfiltration over USB
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1070
+  technique_name: Indicator Removal
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1070.003
+  technique_name: Clear Command History
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1070.005
+  technique_name: Network Share Connection Removal
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1074
+  technique_name: Data Staged
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1074.001
+  technique_name: Local Data Staging
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1074.002
+  technique_name: Remote Data Staging
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1078
+  technique_name: Valid Accounts
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1078.001
+  technique_name: Default Accounts
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 4
+      comment: ''
+      auto_generated: true
+- technique_id: T1078.002
+  technique_name: Domain Accounts
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1078.003
+  technique_name: Local Accounts
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1087
+  technique_name: Account Discovery
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1087.001
+  technique_name: Local Account
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1090
+  technique_name: Proxy
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1090.001
+  technique_name: Internal Proxy
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1090.002
+  technique_name: External Proxy
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1090.003
+  technique_name: Multi-hop Proxy
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1091
+  technique_name: Replication Through Removable Media
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1092
+  technique_name: Communication Through Removable Media
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 4
+      comment: ''
+      auto_generated: true
+- technique_id: T1098
+  technique_name: Account Manipulation
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1098.002
+  technique_name: Additional Email Delegate Permissions
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1098.005
+  technique_name: Device Registration
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1102
+  technique_name: Web Service
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1102.002
+  technique_name: Bidirectional Communication
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1102.003
+  technique_name: One-Way Communication
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1104
+  technique_name: Multi-Stage Channels
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1105
+  technique_name: Ingress Tool Transfer
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1110
+  technique_name: Brute Force
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1110.001
+  technique_name: Password Guessing
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1110.002
+  technique_name: Password Cracking
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1110.003
+  technique_name: Password Spraying
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1110.004
+  technique_name: Credential Stuffing
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1114
+  technique_name: Email Collection
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+  - applicable_to:
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1114.001
+  technique_name: Local Email Collection
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1114.002
+  technique_name: Remote Email Collection
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+  - applicable_to:
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1119
+  technique_name: Automated Collection
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+  - applicable_to:
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1133
+  technique_name: External Remote Services
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1134
+  technique_name: Access Token Manipulation
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1134.005
+  technique_name: SID-History Injection
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1136
+  technique_name: Create Account
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1136.001
+  technique_name: Local Account
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1136.002
+  technique_name: Domain Account
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1176
+  technique_name: Browser Extensions
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1185
+  technique_name: Browser Session Hijacking
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1187
+  technique_name: Forced Authentication
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1189
+  technique_name: Drive-by Compromise
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1197
+  technique_name: BITS Jobs
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1199
+  technique_name: Trusted Relationship
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1200
+  technique_name: Hardware Additions
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1204
+  technique_name: User Execution
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1204.001
+  technique_name: Malicious Link
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1205
+  technique_name: Traffic Signaling
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1205.001
+  technique_name: Port Knocking
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1205.002
+  technique_name: Socket Filters
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1207
+  technique_name: Rogue Domain Controller
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1212
+  technique_name: Exploitation for Credential Access
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1213
+  technique_name: Data from Information Repositories
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1213.002
+  technique_name: Sharepoint
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1217
+  technique_name: Browser Bookmark Discovery
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1218
+  technique_name: System Binary Proxy Execution
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1218.003
+  technique_name: CMSTP
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1218.005
+  technique_name: Mshta
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1218.007
+  technique_name: Msiexec
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1218.010
+  technique_name: Regsvr32
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1219
+  technique_name: Remote Access Software
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1221
+  technique_name: Template Injection
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1222
+  technique_name: File and Directory Permissions Modification
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1222.001
+  technique_name: Windows File and Directory Permissions Modification
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1484
+  technique_name: Domain Policy Modification
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1484.001
+  technique_name: Group Policy Modification
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1484.002
+  technique_name: Domain Trust Modification
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1496
+  technique_name: Resource Hijacking
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1531
+  technique_name: Account Access Removal
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 4
+      comment: ''
+      auto_generated: true
+- technique_id: T1539
+  technique_name: Steal Web Session Cookie
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1542
+  technique_name: Pre-OS Boot
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1542.003
+  technique_name: Bootkit
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 4
+      comment: ''
+      auto_generated: true
+- technique_id: T1550
+  technique_name: Use Alternate Authentication Material
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1550.002
+  technique_name: Pass the Hash
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 4
+      comment: ''
+      auto_generated: true
+- technique_id: T1550.003
+  technique_name: Pass the Ticket
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 4
+      comment: ''
+      auto_generated: true
+- technique_id: T1552
+  technique_name: Unsecured Credentials
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+  - applicable_to:
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1552.001
+  technique_name: Credentials In Files
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1552.003
+  technique_name: Bash History
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1552.004
+  technique_name: Private Keys
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1552.006
+  technique_name: Group Policy Preferences
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1555
+  technique_name: Credentials from Password Stores
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1555.003
+  technique_name: Credentials from Web Browsers
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1555.004
+  technique_name: Windows Credential Manager
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1555.005
+  technique_name: Password Managers
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1556
+  technique_name: Modify Authentication Process
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1556.001
+  technique_name: Domain Controller Authentication
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1556.003
+  technique_name: Pluggable Authentication Modules
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1556.005
+  technique_name: Reversible Encryption
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1556.006
+  technique_name: Multi-Factor Authentication
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 4
+      comment: ''
+      auto_generated: true
+- technique_id: T1556.007
+  technique_name: Hybrid Identity
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1558
+  technique_name: Steal or Forge Kerberos Tickets
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+  - applicable_to:
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1558.001
+  technique_name: Golden Ticket
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1558.003
+  technique_name: Kerberoasting
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 4
+      comment: ''
+      auto_generated: true
+- technique_id: T1558.004
+  technique_name: AS-REP Roasting
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 4
+      comment: ''
+      auto_generated: true
+- technique_id: T1561
+  technique_name: Disk Wipe
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1561.001
+  technique_name: Disk Content Wipe
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1561.002
+  technique_name: Disk Structure Wipe
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1563
+  technique_name: Remote Service Session Hijacking
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1563.001
+  technique_name: SSH Hijacking
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1563.002
+  technique_name: RDP Hijacking
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1564
+  technique_name: Hide Artifacts
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1564.002
+  technique_name: Hidden Users
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1567
+  technique_name: Exfiltration Over Web Service
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1567.001
+  technique_name: Exfiltration to Code Repository
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1567.002
+  technique_name: Exfiltration to Cloud Storage
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1568
+  technique_name: Dynamic Resolution
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1568.001
+  technique_name: Fast Flux DNS
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1572
+  technique_name: Protocol Tunneling
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - L-servers
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1606
+  technique_name: Forge Web Credentials
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1606.001
+  technique_name: Web Cookies
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1606.002
+  technique_name: SAML Tokens
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1615
+  technique_name: Group Policy Discovery
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - W-servers
+    - Workstations
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 1
+      comment: ''
+      auto_generated: true
+- technique_id: T1621
+  technique_name: Multi-Factor Authentication Request Generation
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
+- technique_id: T1649
+  technique_name: Steal or Forge Authentication Certificates
+  detection:
+    applicable_to:
+    - all
+    location:
+    - ''
+    comment: ''
+    score_logbook:
+    - date: 
+      score: -1
+      comment: ''
+  visibility:
+  - applicable_to:
+    - all
+    comment: ''
+    score_logbook:
+    - date: 2023-03-07 18:51:51.576101
+      score: 2
+      comment: ''
+      auto_generated: true
