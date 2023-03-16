@@ -22,4 +22,6 @@ Herramientas y utilidades para sacarle todo el partido al framework de MITRE.
 <li>Python</li>
 <li>Docker</li></ul>
 
+<p>Lo sé. Queda mucho por actualizar y por documentar. Lo iré haciendo tranquilamente. Tambien iré incorporando nuevas herramientas en una nueva versión de la OVA.<br>
+Un saludo</p>
 
