@@ -1,6 +1,6 @@
 <H2> # MITREando </H2>
-Herramientas y utilidades para sacarle todo el partido al framework de MITRE.
-No te lo pierdas: https://start.me/p/onlQRD/escuela-de-calor
+<p>Herramientas y utilidades para sacarle todo el partido al framework de MITRE.<br>
+No te lo pierdas: https://start.me/p/onlQRD/escuela-de-calor </p>
 
 <h3> # OVA MITREando </h3>
 enlace a la MV: https://www.grupotrc.com/TRCPaginas-116-Emilio-Rico.aspx
