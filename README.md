@@ -1,7 +1,11 @@
-# MITREando
+<H2> # MITREando </H2>
 Herramientas y utilidades para sacarle todo el partido al framework de MITRE.
+No te lo pierdas: https://start.me/p/onlQRD/escuela-de-calor
 
-<div>Instaladas a fecha 01/03/2023:<br>
+<h3> # OVA MITREando </h3>
+enlace a la MV: https://www.grupotrc.com/TRCPaginas-116-Emilio-Rico.aspx
+
+<div>Herramientas y utilidades instaladas: a fecha 01/03/2023:<br>
 <ul>
 <li>ATT&CK Navigator [D]</li>
 <li>DeTT&CK</li>
