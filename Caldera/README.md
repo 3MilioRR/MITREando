@@ -8,6 +8,6 @@ https://caldera.mitre.org/
 
 <p>
 - usuario: <code>admin</code><br>
-- password: <code>admin</code></p>>
+- password: <code>admin</code></p>
 
 
