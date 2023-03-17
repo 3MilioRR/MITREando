@@ -8,8 +8,9 @@
 Visualizar en el navegador: <code><a href="localhost:8000">localhost:8000</a></code></p>
 
 <h3 dir="auto">Para 'pintar un flujo' con Flow Attack Library </h3>
-<p dir="auto">Generar en MITRE Navigator la imagen SVG de las tácticas empleadas y guardarlo en <code>attack-flow/images</code> (las carpetas solo son una propuesta)<br>
-Generar un flujo de ataque (.json) y guardarlo en la carpeta <code>attack/corpus</code>:</p>
+<p dir="auto">Generar en MITRE Navigator la imagen SVG de las tácticas empleadas y guardarlo en <code>attack-flow/images</code><br>
+Generar un flujo de ataque (.json) y guardarlo en la carpeta <code>attack/corpus</code>:<br>
+(las carpetas señaladas solo son una propuesta)</p>
 <p dir="auto">Arrancar Poetry <br>
 <code>cd attack-flow</code><br>
 <code>poetry shell</code></p>
