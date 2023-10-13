@@ -1,24 +1,22 @@
 <h1 dir="auto">Instalación de Docker<h1></h1>
 
-Una introducción a Dockers:
-https://www.digitalocean.com/community/tutorials/the-docker-ecosystem-an-introduction-to-common-components
+<p dir="auto">Una introducción a Dockers:<br>
+<a href="https://www.digitalocean.com/community/tutorials/the-docker-ecosystem-an-introduction-to-common-components">https://www.digitalocean.com/community/tutorials/the-docker-ecosystem-an-introduction-to-common-components</a></p>
 
-Empezamos
-sudo apt update
-sudo apt upgrade
+<h3 dir="auto">Antes de nada</h3>
+<p>Comprueba si hay actualizaciones: <code>sudo apt update</code></p>
+<p>Actualiza si fuera necesario: <code>sudo apt updgrade</code></p>
 
-Instalamos las depenencias
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
-sudo apt install ca-certificates curl gnupg lsb-release
+<h3 dir="auto">Empezamos</h3>
+<p>Instalamos las dependencias: <code>sudo apt install ca-certificates curl gnupg lsb-release</code></p>
+<p>Añadimos la clave de GPG para el repositorio oficial de Docker en su sistema: </p>
+<ul dir="auto">
+<li><code>sudo mkdir -p /etc/apt/keyrings</code></li>
+<li><code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg</code></li>
+<li><code>sudo chmod a+r /etc/apt/keyrings/docker.gpg</code></li></ul>
 
-Añadimos la clave de GPG para el repositorio oficial de Docker en su sistema:
-sudo mkdir -p /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-sudo chmod a+r /etc/apt/keyrings/docker.gpg
-(curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -)
-
-Agregue el repositorio de Docker a las fuentes de APT:
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+<h3 dir="auto">Agregue el repositorio de Docker a las fuentes de APT</h3>
+<p></p></code>echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 A continuación, actualice el paquete de base de datos con los paquetes de Docker del repositorio recién agregado:
 sudo apt update
