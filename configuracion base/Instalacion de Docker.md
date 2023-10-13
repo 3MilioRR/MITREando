@@ -1,4 +1,4 @@
-Instalación de Docker:
+<h1 dir="auto">Instalación de Docker<h1></h1>
 
 Una introducción a Dockers:
 https://www.digitalocean.com/community/tutorials/the-docker-ecosystem-an-introduction-to-common-components
