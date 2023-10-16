@@ -40,26 +40,15 @@ docker-ce:<br>
 <li><code>sudo usermod -aG docker ${USER}</code></li></ul>
 
 <p>Comprobar que ha ido bien: cerrar la sesión del servidor, volver a iniciarla y comprobar:<code>id -nG</code></p>
+<p>Si queremos agregar al grupo docker un usuario con el que no inició sesión, declarar dicho nombre de usuario de forma explícita: <code>sudo usermod -aG docker username</code></p>
 
-Si debe agregar al grupo docker un usuario con el que no inició sesión, declare dicho nombre de usuario de forma explícita usando lo siguiente:
-sudo usermod -aG docker username
+<h3 dir="auto">Funcionamiento de Docker</h3>
+<ul dir="auto">
+<li>Activar o encender el servicio: <code>systemctl start docker</code></li>
+<li>Comprobar la instalación de Docker: <code>docker run hello-world</code></li>
+<li>Para comprobar el estado del servicio: <code>systemctl status docker</code></li>
+<li>Comprobar la instalación de Docker Compose: <code>docker compose version</code></li></ul>
+<p>Para ver todos los subcomandos disponibles, escriba lo siguiente: <code>docker</code></p>
 
-activar o encender el servicio, para ello corre en la terminal la instrucción:
-systemctl start docker
-
-Para comprobar el estado del servicio:
-systemctl status docker
-
-Comprobar la instalación de Docker
-docker run hello-world
-
-Comprobar la instalación de Docker Compose 
-docker compose version
-
-Para ver todos los subcomandos disponibles, escriba lo siguiente:
-docker
-
-
-
-Más info
-https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es#paso-6-administrar-contenedores-de-docker
+<p>Más info:<BR>
+<a href=https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es#paso-6-administrar-contenedores-de-docker>https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es#paso-6-administrar-contenedores-de-docker</a></p>
