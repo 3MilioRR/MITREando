@@ -48,7 +48,7 @@ docker-ce:<br>
 <li>Comprobar la instalación de Docker: <code>docker run hello-world</code></li>
 <li>Para comprobar el estado del servicio: <code>systemctl status docker</code></li>
 <li>Comprobar la instalación de Docker Compose: <code>docker compose version</code></li></ul>
-<p>Para ver todos los subcomandos disponibles, escriba lo siguiente: <code>docker</code></p>
+<p>Para ver todos los subcomandos disponibles, escribir lo siguiente: <code>docker</code></p>
 
 <p>Más info:<BR>
 <a href=https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es#paso-6-administrar-contenedores-de-docker>https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es#paso-6-administrar-contenedores-de-docker</a></p>
