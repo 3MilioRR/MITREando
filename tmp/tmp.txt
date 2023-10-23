@@ -1,0 +1,11 @@
+Instalar programas desarrollados en Python
+git clone https://github.com/USERNAME/REPOSITORY
+cd REPOSITORY
+pip install -r requirements.txt
+python3 APP.py
+
+git clone https://github.com/YashGholap/Calculator
+cd Calculator
+python3 Calculator.py
+
+
