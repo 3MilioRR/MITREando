@@ -16,10 +16,12 @@
 
 <h1 dir="auto">Instalación local</h1>
 <p dir="auto">Si solo quieres hacer una instalación local, puedes seguir estos pasos:</p>
+
 <p dir="auto"><strong>Requisitos:</strong></p>
 <ul dir="auto">
 <li><a href="https://nodejs.org/en">Node.js v.18</a></li>
 <li><a href="https://angular.io/cli">Angular CLI</a></li></ul>
+<p>(Hay una mini guía en esta carpeta para instalar node.js, npm y angular cli)</p>
 
 <p dir="auto"><strong>Instalación</strong></p>
 <p>Solo la primera vez:</p>
