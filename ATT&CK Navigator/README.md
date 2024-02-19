@@ -11,9 +11,8 @@
 <p dir="auto">Si solo quieres hacer una instalación local, puedes seguir estos pasos:</p>
 <p dir="auto"><strong>Requisitos:</strong></p>
 <ul dir="auto">
-<li>Python 3.8 o superior</li>
-<li>pip (gestor de instalación de paquetes de Python)</li>
-<li>Instalar con los paquetes del fichero requirements.txt</li></ul>
+<li><a href="https://nodejs.org/en">Node.js v.18</a></li>
+<li><a href="https://angular.io/cli">Angular CLI</a></li></ul>
 
 <p dir="auto"><strong>Instalación</strong></p>
 <ol>
