@@ -37,7 +37,8 @@ docker-ce:<br>
 <p>Para ejecutar Docker y comandos sin sudo (opcional):</p>
 <ul dir="auto">
 <li><code>sudo groupadd docker</code></li>
-<li><code>sudo usermod -aG docker ${USER}</code></li></ul>
+<li><code>sudo usermod -aG docker ${USER}</code></li>
+<li>Si no funciona ejecutar <code>sudo usermod -aG docker nombre-usuario</code></li></ul>
 
 <p>Comprobar que ha ido bien: cerrar la sesión del servidor, volver a iniciarla y comprobar:<code>id -nG</code></p>
 <p>Si queremos agregar al grupo docker un usuario con el que no inició sesión, declarar dicho nombre de usuario de forma explícita: <code>sudo usermod -aG docker username</code></p>
