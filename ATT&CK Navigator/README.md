@@ -1,8 +1,8 @@
 <h1 dir="auto">ATT&amp;CK Navigator</h1>
 
-<p dir="auto">ATT&amp;CK es una herramienta desarrollada en Python, HTML, cssc y java.</p>
+<p dir="auto">ATT&amp;CK es una herramienta desarrollada en Python, HTML, SCSS y TypeScript.</p>
 
-<p>El uso del navegador es muy amplio:puedes usar el Navigator para visualizar tu cobertura defensiva, llevar acabo una planificación de tus equipos rojo/azul, la frecuencia de las técnicas detectadas o cualquier otra cosa que quieras hacer. Se integra con nuemerosas herramientas de MITRE y tambien de terceros.</p>
+<p>El uso del navegador es muy amplio: puedes usar el Navigator para hacerte una idea de tu cobertura defensiva, llevar acabo una planificación de tus equipos rojo/azul, la frecuencia de las técnicas detectadas o cualquier otra cosa que quieras hacer. Se integra con nuemerosas herramientas de MITRE y tambien de terceros.</p>
  
 <p dir="auto">Existen varias imágenes de Docker que se pueden instalar localmente.</p>
 <ol>
