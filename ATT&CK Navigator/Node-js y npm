@@ -1,0 +1,25 @@
+NODE.JS
+Instalación de node.js
+https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04-es
+https://kinsta.com/es/blog/como-instalar-node-js/
+
+Instalación
+$ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
+$ node --version
+
+NPM
+En la mayoría de los casos, también le convendrá instalar npm, el administrador de paquetes de Node.js.
+$ sudo apt install npm
+tambien ($ sudo npm install -g n)
+$sudo n latest
+$npm --version
+
+Comprobar que la isntalación es correcta
+$ nodejs -v
+Salida (output) esperado
+$ v10.19.0 
+
+ANGULAR CLI
+Instalación de Angular CLI (ttps://angular.io/cli)
+$ sudo npm install -g @angular/cli
