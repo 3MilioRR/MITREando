@@ -8,8 +8,8 @@
 <ol>
 <li><a href="https://hub.docker.com/r/sapran/attack-navigator-docker">Sapran</a></li>
 <li><a href="https://hub.docker.com/r/bodane/attack-navigator">Bodane</a></li>
-<li><a href="[https://hub.docker.com/r/sapran/attack-navigator-docker">VT Foundation</a></li>
-<li><a href="https://hub.docker.com/r/farwarx/attack-navigator"></a></li></ol>
+<li><a href="https://hub.docker.com/r/vtfoundation/attack-navigator">VT Foundation</a></li>
+<li><a href="https://hub.docker.com/r/farwarx/attack-navigator">Farwarx</a></li></ol>
 
 <p dir="auto">Tambien es posible ejecutar una versión on-line, sin necesidad de instalarse nada:<br>
 <a href="https://mitre-attack.github.io/attack-navigator/">MITRE Navigator On-line.</a></p>
