@@ -14,7 +14,7 @@
 <p dir="auto">Tambien es posible ejecutar una versión on-line, sin necesidad de instalarse nada:<br>
 <a href="https://mitre-attack.github.io/attack-navigator/">MITRE Navigator On-line.</a></p>
 
-<h3 dir="auto">Instalación local</h3>
+<h1 dir="auto">Instalación local</h1>
 <p dir="auto">Si solo quieres hacer una instalación local, puedes seguir estos pasos:</p>
 <p dir="auto"><strong>Requisitos:</strong></p>
 <ul dir="auto">
