@@ -1,0 +1,9 @@
+ProtAAPP has been identified in the process as a blue-team agent
+
+The most interesting PDB string is the “4113.pdb,” which appears to reference CVE-2014-4113. This CVE is a local kernel vulnerability that, with successful exploitation, would give any user SYSTEM access on the machine.
+
+The malware component, test.exe, uses the Windows command "cmd.exe" /C whoami” to verify it is running with the elevated privileges of “System” and creates persistence by creating the following scheduled task:
+
+    schtasks /create /tn "mysc" /tr C:\Users\Public\test.exe /sc ONLOGON     /ru "System"
+
+When executed, the malware first establishes a SOCKS5 connection to 192.157.198.103 using TCP port 1913. The malware sends the SOCKS5 connection request "05 01 00" and verifies the server response starts with "05 00". The malware then requests a connection to 192.184.60.229 on TCP port 81 using the command "05 01 00 01 c0 b8 3c e5 00 51" and verifies that the first two bytes from the server are "05 00" (c0 b8 3c e5 is the IP address and 00 51 is the port in network byte order).
