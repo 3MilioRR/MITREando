@@ -1,18 +1,4 @@
 
-*** MITRE ASSISTANT *************
-comprobar que se ejecuta y ayuda
-mitre-assistant -h
-
-Ejemplos de Querys
-mitre-assistant search -m enterprise -t "stats:platforms"
-mitre-assistant search -m enterprise -t "stats:techniques" 
-mitre-assistant search -m enterprise -t "stats:datasources" -e csv -f Descargas/DataSources_file.csv
-
-mitre-assistant search -m enterprise -t "persistence"
-mitre-assistant search -m enterprise -t "mimikatz"
-mitre-assistant search -m enterprise -t "APT18,APT29,Fox-Kitten"
-
-
 *** MITRE NAVIGATOR ***************
 docker start navigator
 http://localhost:80
@@ -23,24 +9,24 @@ cd DeTTECT
 python3 dettect.py e
 http://localhost:8080
 
-Data sources
-cargar ejemplo:  1Rooted/DS_rooted.yaml
-Obtener .json
+# Data sources
+# cargar ejemplo:  1Rooted/DS_rooted.yaml
+# Obtener .json
 cd DeTTECT
 python3 dettect.py ds -fd input/DS_Rooted.yaml -l
 
-pasar DATA-SOURCE a TECNICAS
+# pasar DATA-SOURCE a TECNICAS
 python3 dettect.py ds -fd input/DS_Rooted.yaml --yaml
 
-visibilidad
-cargar ejemplo: 1Rooted/TEC_Rooted.yaml
+# visibilidad
+# cargar ejemplo: 1Rooted/TEC_Rooted.yaml
 Obtener .json
 python3 dettect.py v -ft input/TEC_Rooted.yaml -l
 
-deteccion
+# deteccion
 python3 dettect.py d -ft input/TEC_Rooted.yaml -l
 
-grupos
+# grupos
 python3 dettect.py g -g 'APT18,APT29,Fox Kitten'
 
 
@@ -49,9 +35,9 @@ docker start AttackFlowBuilder
 http://localhost:8000/
 abrir flujo /attack-flow/rooted/ContiPWC.afb
 
-Pintar el flujo - 
-1- generar imagen .svg en navigator
-2- pintar flujo de ataque
+# Pintar el flujo - 
+# 1- generar imagen .svg en navigator
+# 2- pintar flujo de ataque
 cd attack-flow
 poetry shell
 af matrix rooted/ContiPWCNav.svg rooted/Conti_PWC.json rooted/ContiPWC-secuencia.svg
